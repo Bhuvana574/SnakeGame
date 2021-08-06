@@ -1,10 +1,13 @@
+
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GridTile : Tile
 {
-   
+
 
     [SerializeField] GameObject applePrefab;
     GameObject apple;
@@ -15,15 +18,15 @@ public class GridTile : Tile
     }
     public bool SetApple()
     {
-        if(hasApple)
+        if (hasApple)
         {
             return false;
         }
         else
         {
-            
+
             apple = Instantiate(applePrefab, transform.position, Quaternion.identity);
-            apple . transform.parent = transform;
+            apple.transform.parent = transform;
             hasApple = true;
             return true;
 
@@ -32,7 +35,7 @@ public class GridTile : Tile
     }
     public bool TakeApple()
     {
-        if(!hasApple)
+        if (!hasApple)
         {
             return false;
         }

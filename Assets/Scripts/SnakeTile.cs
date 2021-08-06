@@ -1,12 +1,14 @@
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SnakeTile :Tile
+public class SnakeTile : Tile
 {
-  public void MoveLeft()
+    public void MoveLeft()
     {
-        MoveToGrid(gridPos. x - 1,gridPos.y);
+        MoveToGrid(gridPos.x - 1, gridPos.y);
     }
 
     public void MoveRight()
@@ -15,10 +17,11 @@ public class SnakeTile :Tile
     }
     public void MoveUp()
     {
-        MoveToGrid(gridPos.x , gridPos.y+1);
+        MoveToGrid(gridPos.x, gridPos.y + 1);
     }
     public void MoveDown()
     {
-        MoveToGrid(gridPos.x, gridPos.y -1);
+        MoveToGrid(gridPos.x, gridPos.y - 1);
     }
+
 }
